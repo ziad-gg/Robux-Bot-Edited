@@ -1,0 +1,44 @@
+{
+  "name": "Robux-Bot",
+  "version": "2.0.0",
+  "description": "The Discord Robux Bot !",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "creators": [
+    "Ziath (860865950945378325)",
+    "Slayver (789896576402587667)"
+  ],
+  "dependencies": {
+    "axios": "^1.4.0",
+    "canvas": "^2.11.1",
+    "connect-flash": "^0.1.1",
+    "connect-mongo": "^5.0.0",
+    "discord.js": "^14.11.0",
+    "ejs": "^3.1.9",
+    "esm": "^3.2.25",
+    "express": "^4.18.2",
+    "express-session": "^1.17.3",
+    "express-ws": "^5.0.2",
+    "handler.djs": "^2.6.36",
+    "humanize-duration": "^3.29.0",
+    "mongoose": "^7.4.1",
+    "nodemon": "^3.0.1",
+    "passport": "^0.6.0",
+    "passport-discord": "^0.1.4",
+    "uniqid": "^5.4.0",
+    "zoblox.js": "^4.10.0"
+  },
+  "engines": {
+    "node": ">=16.9.0"
+  },
+  "devDependencies": {
+    "dotenv": "^16.3.1",
+    "ws": "^8.13.0"
+  },
+  "optionalDependencies": {
+    "bufferutil": "^4.0.7",
+    "utf-8-validate": "^6.0.3"
+  }
+}

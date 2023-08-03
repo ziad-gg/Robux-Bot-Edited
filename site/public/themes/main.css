@@ -1,0 +1,231 @@
+:root {
+  --sections-bg-color: rgba(24, 23, 23, 0.995);
+}
+
+::-webkit-scrollbar {
+  width: 4px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: var(--sections-bg-color);
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: rgb(65, 65, 191);
+}
+
+.side-line {
+  position: relative;
+}
+
+.text-purple {
+  color: rgb(65, 65, 191);
+}
+
+.bg-purple {
+  background-color: rgb(65, 65, 191) !important;
+}
+
+.side-line::after {
+  content: "";
+  position: absolute;
+  height: 2.3rem;
+  width: 0.1rem;
+  right: -0.4rem;
+  top: 0.1rem;
+  background-color: white;
+  opacity: 0.2;
+  box-shadow: 0 0 1rem 4px black;
+}
+
+header,
+footer {
+  background-color: var(--sections-bg-color) !important;
+  color: white !important;
+  min-height: 50px;
+}
+
+.main-section {
+  height: calc(100% - 45px);
+  min-height: 100dvh !important;
+  background-color: var(--sections-bg-color);
+  
+  /* width: 100%; */
+}
+
+.w-27 {
+  max-width: 27rem;
+}
+
+.w {
+  max-width: 24rem;
+}
+
+.main-section img {
+  margin: auto;
+  padding: auto;
+  position: relative;
+  bottom: 12rem;
+  right: 8rem;
+  height: 200px !important;
+  animation: spin 5s linear infinite;
+}
+
+#sidebar {
+  position: absolute;
+  background-color: var(--sections-bg-color) !important;
+  min-height: 200px !important;
+  padding: 0 !important;
+  margin: 0 !important;
+}
+
+.main-section {
+  height: calc(100% - 45px);
+  min-height: 600px;
+  background-color: var(--sections-bg-color);
+}
+
+.command-list {
+  margin-top: 20px;
+  padding: 0;
+}
+
+.command-item {
+  cursor: pointer;
+  margin-bottom: 20px;
+}
+
+.command-item:hover {
+  background-color: #f0f0f0;
+}
+
+.command-details {
+  display: none;
+  margin-top: 10px;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.box {
+  background-color: rgba(70, 68, 68, 0.995) !important;
+  color: #eee;
+  padding: 20px;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+
+.box-icon {
+  font-size: 24px;
+  margin-right: 10px;
+}
+
+.box-value {
+  font-weight: bold;
+}
+
+/* Custom box colors */
+.box-group-name {
+  background-color: #f44336;
+  /* Red */
+}
+
+.box-group-fund {
+  background-color: #4caf50;
+  /* Green */
+}
+
+.box-group-link {
+  background-color: #2196f3;
+  /* Blue */
+}
+
+.box-group-coming-funds {
+  background-color: #ffc107;
+  /* Yellow */
+}
+
+.box-user-balance {
+  background-color: #9c27b0;
+  /* Purple */
+}
+
+.box-user-robux {
+  background-color: #e91e63;
+  /* Pink */
+}
+
+.box-user-transfer {
+  background-color: #607d8b;
+  /* Gray */
+}
+
+.box-guild-id {
+  background-color: #3f51b5;
+  /* Indigo */
+}
+
+.box-guild-owner {
+  background-color: #009688;
+  /* Teal */
+}
+
+.box-guild-robux-price {
+  background-color: #ff5722;
+  /* Orange */
+}
+
+.box-transfer-coins {
+  background-color: green;
+}
+
+.btn-transfer {
+  background-color: #6c757d;
+  border-color: #6c757d;
+  padding: 0.5rem 1.5rem;
+  font-size: 1rem;
+}
+
+.btn-transfer:hover {
+  background-color: #5a6268;
+  border-color: #5a6268;
+}
+
+.btn-transfer:focus {
+  box-shadow: 0 0 0 0.2rem rgba(108, 117, 125, 0.5);
+}
+
+.btn-transfer:active {
+  background-color: #545b62;
+  border-color: #4e555b;
+}
+
+@media only screen and (max-width: 767px) {
+  .main-section {
+    text-align: center !important;
+    display: flex !important;
+    min-height: 250dvh !important;
+    align-items: center !important;
+  }
+
+  .navbar-nav,
+  #navbarSupportedContent {
+    display: none !important;
+    /* flex-direction: row !important;
+      gap: 1em */
+  }
+
+  .main-section img {
+    display: none;
+  }
+}
